@@ -1,0 +1,6 @@
+framework module Pods_uikitt {
+  umbrella header "Pods-uikitt-umbrella.h"
+
+  export *
+  module * { export * }
+}

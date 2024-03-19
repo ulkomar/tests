@@ -6,5 +6,5 @@ target 'uikitt' do
   use_frameworks!
 
   # Pods for uikitt
-  pod 'SnapKit', '~> 5.7.0'
+pod 'SnapKit', :git => 'git@github.com:ulkomar/SnapKit.git', :branch => 'develop'
 end

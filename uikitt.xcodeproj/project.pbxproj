@@ -15,9 +15,11 @@
 		804337CF2B84EBF0006DC274 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 804337CD2B84EBF0006DC274 /* LaunchScreen.storyboard */; };
 		80DAF4D12BA087D100CC55B7 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DAF4D02BA087D100CC55B7 /* MyTableViewCell.swift */; };
 		80DAF4D32BA0881500CC55B7 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DAF4D22BA0881500CC55B7 /* MyTableViewController.swift */; };
+		E85F3AF13001EF449540D330 /* Pods_uikitt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1943FCB24F34DD6B9EC5183 /* Pods_uikitt.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35B55484222D61943250D127 /* Pods-uikitt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uikitt.release.xcconfig"; path = "Target Support Files/Pods-uikitt/Pods-uikitt.release.xcconfig"; sourceTree = "<group>"; };
 		804337BF2B84EBEB006DC274 /* uikitt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uikitt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		804337C22B84EBEB006DC274 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		804337C42B84EBEB006DC274 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +30,8 @@
 		804337D02B84EBF0006DC274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80DAF4D02BA087D100CC55B7 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		80DAF4D22BA0881500CC55B7 /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		B1943FCB24F34DD6B9EC5183 /* Pods_uikitt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uikitt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA09780F5DF15C09D4C84E58 /* Pods-uikitt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uikitt.debug.xcconfig"; path = "Target Support Files/Pods-uikitt/Pods-uikitt.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E85F3AF13001EF449540D330 /* Pods_uikitt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60763CB0268417498CE564F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA09780F5DF15C09D4C84E58 /* Pods-uikitt.debug.xcconfig */,
+				35B55484222D61943250D127 /* Pods-uikitt.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		60BC6B7A49A5B7DB95F855E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1943FCB24F34DD6B9EC5183 /* Pods_uikitt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		804337B62B84EBEB006DC274 = {
 			isa = PBXGroup;
 			children = (
 				804337C12B84EBEB006DC274 /* uikitt */,
 				804337C02B84EBEB006DC274 /* Products */,
+				60763CB0268417498CE564F0 /* Pods */,
+				60BC6B7A49A5B7DB95F855E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 804337D32B84EBF0006DC274 /* Build configuration list for PBXNativeTarget "uikitt" */;
 			buildPhases = (
+				647324379265113EDD1A280B /* [CP] Check Pods Manifest.lock */,
 				804337BB2B84EBEB006DC274 /* Sources */,
 				804337BC2B84EBEB006DC274 /* Frameworks */,
 				804337BD2B84EBEB006DC274 /* Resources */,
+				6032DBBF84A7C533EADCA249 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,6 +173,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6032DBBF84A7C533EADCA249 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uikitt/Pods-uikitt-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uikitt/Pods-uikitt-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-uikitt/Pods-uikitt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		647324379265113EDD1A280B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-uikitt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		804337BB2B84EBEB006DC274 /* Sources */ = {
@@ -303,6 +372,7 @@
 		};
 		804337D42B84EBF0006DC274 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA09780F5DF15C09D4C84E58 /* Pods-uikitt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -331,6 +401,7 @@
 		};
 		804337D52B84EBF0006DC274 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35B55484222D61943250D127 /* Pods-uikitt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
